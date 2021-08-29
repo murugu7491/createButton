@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+
+<head>
+<title> Creating Buttons </title>
+<meta charset = "UTF-8"/>
+<meta name = "viewport" content = "max-width = device-width initial-scale = 1.0"/>
+</head>
+
+<body>
+<header> <h1> Creating Buttons </h1> </header>
+<p> Type Text to create into Button </p>
+<input type = "text" placeholder = "Enter Text..." id = "inp"/>
+<button onclick = "myFun()" id = "but"> Create </button>
+<p id = "demo"></p>
+<script type = "text/javascript">
+function myFun() {
+var input = document.getElementById("inp").value;
+var button = document.createElement("BUTTON");
+button.innerHTML = input;
+document.body.appendChild(button);
+}
+</script>
+</body>
+</html>
